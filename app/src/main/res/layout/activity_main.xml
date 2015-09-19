@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+<!-- XML de la activvidad principal que contiene a ambos fragmentos -->
+
+    <!--Fragmento de la izquierda en donde ingresare los datos -->
+    <fragment
+        android:id="@+id/izq"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        class="com.fernanda.fragments.Izquierda"
+        />
+    <!-- Fragmento de la derecha donde mostrare los datos que ingrese en el primer fragment -->
+    <fragment
+        android:id="@+id/der"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        class="com.fernanda.fragments.Derecha"
+        />
+</LinearLayout>
